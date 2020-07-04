@@ -1,7 +1,7 @@
 /*
 These are my screen width sizes:
 
-Smaller
+
 320px
 480px
 720px
@@ -25,7 +25,7 @@ Larger
   --color-primary-dark: rgba(40, 180, 133, 0.8);
   --color-header-1: #fff;
   --color-text-1: #777;
-  --color-primary-bg: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+  --color-primary-bg: linear-gradient(to right bottom,var(--color-primary-light), var(--color-primary-dark));
   --color-card-1: linear-gradient(to right bottom, #ffb900, #ff7730);
   --color-card-2: linear-gradient(to right bottom, #7ed56f, #28b485);
   --color-card-3: linear-gradient(to right bottom, #2998ff, #5643fa);
@@ -35,8 +35,62 @@ Larger
   --bx-shadow-far: 0 1rem 2rem rgba(0,0,3rem, 0.4); }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 62.5%;
+  padding: 2rem; }
 
 img {
   max-width: 100%;
   image-rendering: optimizeSpeed; }
+
+header {
+  display: block;
+  min-height: 100vh; }
+  @media screen and (min-width: 150em) {
+    header {
+      background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/2400/hero-2400.webp); }
+      @supports not (background-image: url(img.webp)) {
+        header {
+          background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/2400/hero-2400.jpg); } } }
+  @media screen and (max-width: 150em) {
+    header {
+      background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/2400/hero-2400.webp); }
+      @supports not (background-image: url(img.webp)) {
+        header {
+          background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/2400/hero-2400.jpg); } } }
+  @media screen and (max-width: 120em) {
+    header {
+      background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/1920/hero-1920.webp); }
+      @supports not (background-image: url(img.webp)) {
+        header {
+          background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/1920/hero-1920.jpg); } } }
+  @media screen and (max-width: 85.375em) {
+    header {
+      background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/1366/hero-1366.webp); }
+      @supports not (background-image: url(img.webp)) {
+        header {
+          background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/1366/hero-1366.jpg); } } }
+  @media screen and (max-width: 80em) {
+    header {
+      background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/1280/hero-1280.webp); }
+      @supports not (background-image: url(img.webp)) {
+        header {
+          background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/1280/hero-1280.jpg); } } }
+  @media screen and (max-width: 45em) {
+    header {
+      background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/720/hero-720.webp); }
+      @supports not (background-image: url(img.webp)) {
+        header {
+          background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/720/hero-720.jpg); } } }
+  @media screen and (max-width: 30em) {
+    header {
+      background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/480/hero-480.webp); }
+      @supports not (background-image: url(img.webp)) {
+        header {
+          background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/480/hero-480.jpg); } } }
+  @media screen and (max-width: 20em) {
+    header {
+      background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/320/hero-320.webp); }
+      @supports not (background-image: url(img.webp)) {
+        header {
+          background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(../img/320/hero-320.jpg); } } }
